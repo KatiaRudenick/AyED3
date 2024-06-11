@@ -1,0 +1,4 @@
+//compila el archivo fuente control_casa.c en una biblioteca dinámica llamada control_casa.dll y 
+también genera un archivo de importación estática libcontrol_casa.a.
+
+gcc -shared -o control_casa.dll control_casa.c "-Wl,--out-implib,libcontrol_casa.a"
