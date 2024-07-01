@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clientes</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+  <link rel="stylesheet" href="./static/customers.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Playwrite+DE+Grund:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-container">
+    <!-- Contenedor para el fondo con la imagen -->
+  </div>
+
+  <div class="navbar">
+      <ul>
+        <li><a href="/customers" class="nav-link active">CLIENTES</a></li>
+        <li><a href="/orders" class="nav-link">ORDENES</a></li>
+        <li><button class="nav-link logout-btn" id="logout">DESLOGUEARSE</button></li>
+      </ul>
+  </div>
+  <div class="content-container">
+    
+
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Orden</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="{{ url_for('static', filename='customers.js') }}"></script>
+  </div>
+</body>
+</html>

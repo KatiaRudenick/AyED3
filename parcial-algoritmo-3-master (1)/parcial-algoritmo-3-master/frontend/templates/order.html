@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ordenes</title>
+  <link rel="stylesheet" href="./static/order.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Playwrite+DE+Grund:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><body>
+  <div class="background-container">
+    <!-- Contenedor para el fondo con la imagen -->
+  </div>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="/customers">CLIENTES</a></li>
+      <li><a href="/orders" class="active">ORDENES</a></li>
+      <li><button class="nav-link logout-btn" id="logout">DESLOGUEARSE</button></li>
+    </ul>
+  </div>
+
+  <div class="content-container">
+
+    <div class="form-group">
+      <button type="button" class="btn-confirmar" id="confirmar">Confirmar</button>
+  </div>
+    <form>
+      <div class="row g-3 m-1">
+        <div class="col-auto">
+          <textarea class="form-control" id="grupo" placeholder="Orden" style="resize: none"></textarea>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">AGREGAR</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Orden</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Usuario</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='order.js') }}"></script>
+</body>
+</html>

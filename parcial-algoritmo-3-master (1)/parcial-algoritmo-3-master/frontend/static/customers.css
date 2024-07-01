@@ -1,0 +1,109 @@
+body {
+    font-family: "Abel", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background-container {
+    background-image: url('forest.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content-container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.947);
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background-color: #2C5F26;
+    padding: 15px 0; /* Ajusta la altura del navbar */
+    width: 100%; /* Ancho igual al contenedor del contenido */
+    margin: 0 auto; /* Centra el navbar horizontalmente */
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Asegúrate de que esté encima del contenido */
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navbar li {
+    padding-left: 5%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a, .navbar button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .logout-btn {
+    font-family: "Abel", sans-serif; 
+    font-size: 15px; 
+    background-color: #E8DEA5;
+    color: #2C5F26;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .logout-btn:hover {
+    background-color: #2C5F26;
+    color: #f8f9fa;
+}
+
+.navbar a.active {
+    color: #f8f9fa;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 5px 10px;
+}
+
+.table th,
+.table td {
+    border-radius: 10px;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #E8DEA5;
+}
+
+.table-striped-rows tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.abel-regular {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

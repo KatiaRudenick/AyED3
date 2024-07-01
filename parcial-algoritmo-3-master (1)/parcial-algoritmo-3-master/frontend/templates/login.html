@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Playwrite+DE+Grund:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- Contenedor del fondo -->
+    <div class="background-container"></div>
+    
+    <!-- Contenedor del formulario -->
+    <form class="form">
+      <div class="card">
+        <label for="username" class="form-label">USUARIO</label>
+        <input type="text" class="form-control" id="username" required />
+        <button type="submit" class="btn" title="Login">Login</button>
+      </div>
+    </form>
+    
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+  </body>
+</html>

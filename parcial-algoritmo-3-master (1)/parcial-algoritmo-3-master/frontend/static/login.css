@@ -1,0 +1,67 @@
+/* Fuente predeterminada */
+body {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  margin: 0; 
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('forest.png'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo del contenedor del formulario */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.947);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Estilo del botón */
+.btn {
+  background-color: #E8DEA5;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: "Abel", sans-serif;
+  font-size: 15px;
+  display: block; /* Cambia a bloque para que ocupe el ancho completo */
+  margin: 20px auto; /* Centra horizontalmente y añade margen superior e inferior */
+  text-align: center; /* Alinea el texto dentro del botón al centro */
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2C5F26;
+}
